@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css" />
+    <!--script type="text/javascript" src="script.js"></script-->
+    <link rel="shortcut icon" href="pictures/pokebola.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+<header>
+    <img class="logo" src="pictures/alura.png" alt="Logo de la Barberia Alura">
+</header>
+  </head>
+  <body>
+    <main>
+      
+      <!-- contenedor de mensaje a encriptar -->
+      <article class="message-container">
+        <!-- espacio para mensaje a encriptar -->
+        <textarea
+          id="message"
+          class="message"
+          placeholder="Ingrese el texto aqui"
+        ></textarea>
+        <!-- recomendación -->
+        <div class="recommendation-container">
+          <img src="./pictures/pokebola.png" />
+          <p class="recommendation">Solo textos sin acentos y sin caracteres especiales.</p>
+        </div>
+        <!-- Botones -->
+        <section class="buttons-container">
+          <button class="button-1" onclick="encrypt()">Encriptar</button>
+          <button class="button-2" onclick="decrypt() ">Desencriptar</button>
+        </section>
+      </article>
+      <!-- contenedor de mensaje a encriptado-->
+      <article class="message-encrypted-container">
+        <div class="message-encrypted">
+          <!-- espacio sin mensaje encriptado -->
+          <!-- no-encrypted-active -->
+          <div id="no-encrypted" class="no-encrypted no-encrypted-active">
+            <img src="./pictures/charizard.png" alt="" />
+            <h2>Ningún mensaje fue encontrado</h2>
+            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+          </div>
+          <!-- espacio con mensaje encriptado -->
+          <!-- encrypted-active -->
+          <div id="encrypted" class="encrypted">
+            <div id="result" class="result-container">
+            </div>
+            <div>
+              <img src="./pictures/charizarmega.png" alt="" />
+            </div>
+            <div class="cortar">
+
+                <button class="btn btn-4" onclick="copy()">Copia</button>
+                
+              
+            </div>
+            
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer>
+        
+        <p class="copyright">&copy Copyright Marconi - 2023 </p> 
+    </footer>
+    <script src="script.js"></script>
+      
+    </script>
+  </body>
+</html>
